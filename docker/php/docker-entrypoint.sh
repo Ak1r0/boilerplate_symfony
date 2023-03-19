@@ -18,6 +18,19 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'php' ] || [ "$1" = 'bin/console' ]; then
 		cd tmp
 		composer require "php:>=$PHP_VERSION"
 		composer config --json extra.symfony.docker 'true'
+
+		composer require doctrine/doctrine-bundle
+		composer require doctrine/doctrine-migrations-bundle
+
+		composer require league/flysystem-bundle
+		composer require symfony/security-bundle
+		composer require symfony/validator
+
+		composer require doctrine/doctrine-fixtures-bundle --dev
+		composer require symfony/maker-bundle --dev
+		composer require symfony/debug-bundle --dev
+		composer require symfony/web-profiler-bundle --dev
+		
 		cp -Rp . ..
 		cd -
 
