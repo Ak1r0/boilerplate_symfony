@@ -1,5 +1,7 @@
 # Boilerplate for symfony with postgre Database and caddy server
 
+Based on [dunglas/symfony-docker](https://github.com/dunglas/symfony-docker)
+
 ## Versions
 
 ### Defaults
