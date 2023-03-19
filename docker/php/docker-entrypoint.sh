@@ -19,6 +19,7 @@ if [ "$1" = 'php-fpm' ] || [ "$1" = 'php' ] || [ "$1" = 'bin/console' ]; then
 		composer require "php:>=$PHP_VERSION"
 		composer config --json extra.symfony.docker 'true'
 
+		composer require doctrine/annotations
 		composer require doctrine/doctrine-bundle
 		composer require doctrine/doctrine-migrations-bundle
 
